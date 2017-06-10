@@ -1,0 +1,10 @@
+package:
+  name: supertest
+  version: "0.1"
+
+source:
+  path: C:\Users\Ian\Anaconda\supertest 
+
+build:
+  number: 1 
+
