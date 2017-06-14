@@ -12,9 +12,9 @@ newCFile = cTemplate.read()
 cTemplate.close()
 
 
-#g = open('C:/Users/Ian/Desktop/template.py')
-#apple = g.read()
-#g.close()
+g = open('C:/Users/Ian/Desktop/template.py')
+apple = g.read()
+g.close()
 
 
 f = open("ExpNameData.txt", "r")
@@ -46,11 +46,11 @@ cFile.write(newCFile)
 
 cFile.close()
 
-#pear = apple.replace('STRING', a)
+pear = apple.replace('STRING', a)
 
-#h = open('C:\Users\Ian\Desktop\PressedExpData.py', 'w')
-#h.write(pear)
-#h.close()
+h = open('C:\Users\Ian\Desktop\PressedExpData.py', 'w')
+h.write(pear)
+h.close()
 
 #expno = {}
 #with open('C:\Users\Ian\Desktop\ExperimentData.txt') as e:
