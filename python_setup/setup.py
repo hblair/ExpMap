@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
-import shutil
+from setuptools import setup
 
-setup(name='ExpNameData',
+setup(name='ExpData',
       version='1.0',
-      py_modules=['PressedExpData',],
+      py_modules=['ExpData'],
       )
-
-shutil.copyfile("C:\Users\Ian\Desktop\movetest.py", "C:/Users/Ian/Desktop/Project_ExpNameData/Build_Recipie/movetest.py")
