@@ -5,5 +5,6 @@ except ImportError:
 
 setup(name = "ExpDat",
       version = "0.1",
-      packages = [""],
-      package_dir = {"
+      packages = ["ExpMap"],
+      package_dir = {"ExpMap":"ExpMap"},
+      )
