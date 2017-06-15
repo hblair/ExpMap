@@ -3,7 +3,7 @@ Created on Fri May 26 12:00:17 2017
 @author: Ian
 """
 
-f = open('ExpNameData.txt', 'r')
+f = open('ExperimentData.txt', 'r')
 a = f.read()
 f.close()
 
@@ -12,12 +12,12 @@ newCFile = cTemplate.read()
 cTemplate.close()
 
 
-g = open('C:/Users/Ian/Desktop/template.py')
+g = open('template.py')
 apple = g.read()
 g.close()
 
 
-f = open("ExpNameData.txt", "r")
+f = open("ExperimentData.txt", "r")
 dataLines = f.readlines()
 newlineRemoved = []
 for line in dataLines:
@@ -48,7 +48,7 @@ cFile.close()
 
 pear = apple.replace('STRING', a)
 
-h = open('C:\Users\Ian\Desktop\PressedExpData.py', 'w')
+h = open('PressedExpData.py', 'w')
 h.write(pear)
 h.close()
 
