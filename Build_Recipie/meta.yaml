@@ -1,10 +1,9 @@
 package:
-  name: supertest
-  version: "0.1"
+  name: toconda
+  version: "0.0"
 
 source:
-  path: C:\Users\Ian\Anaconda\supertest 
+  path: /home/hblair/Science/AndyUpload/toconda 
 
 build:
   number: 1 
-
