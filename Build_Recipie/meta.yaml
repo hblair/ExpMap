@@ -7,8 +7,6 @@ source:
 
 build: 
   number: 4
-  script:
-    - pip install --no-deps --disable-pip-version-check .
 
 requirements:
   build:

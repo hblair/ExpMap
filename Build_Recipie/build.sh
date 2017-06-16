@@ -8,6 +8,4 @@ python dataPress.py
 gcc -std=c99 -c -fpic updatedCFile.c
 gcc -shared -o clib.so updatedCFile.o > $PREFIX/lib/clib.so
 
-mv ExpData.py ExpData
-
-python setup.py install
+pip install --no-deps --disable-pip-version-check .
