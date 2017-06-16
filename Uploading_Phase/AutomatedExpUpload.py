@@ -16,8 +16,12 @@ v = search.split(".")
 
 lastLine = v[len(v)-1]
 
-oldVersionNumber = lastLine.split() 
+oldVersionNumber = int(lastLine.split()) 
+print oldVersionNumber
 
+newVer = oldVersionNumber[0] + 1
+print newVer
+'''
 jim = len(v)
 
 # Update with new version number
@@ -35,3 +39,4 @@ print "***Creating package " + myout
 #Execute "load" to upoad it to Anaconda
 upout = subprocess.check_output(load.split())
 print "***Uploading package " + upout
+'''
