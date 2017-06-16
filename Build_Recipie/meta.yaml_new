@@ -1,0 +1,16 @@
+package: 
+  name: toconda
+  version: "0.3"
+
+source: 
+  path: /home/hblair/Science/AndyUpload/toconda
+
+build: 
+  number: 4
+  script:
+    - pip install --no-deps --disable-pip-version-check .
+
+requirements:
+  build:
+    - python
+    - setuptools
