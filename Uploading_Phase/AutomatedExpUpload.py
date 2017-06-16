@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jun 02 17:27:44 2017
-
 @author: Ian
 """
 # Automatically updates and uploads packages to the cloud
@@ -16,9 +15,9 @@ v = search.split(".")
 
 lastLine = v[len(v)-1]
 
-oldVersionNumber = int(lastLine.split()) 
+oldVersionNumber = int(lastLine.split()[0]) 
 
-newVer = int(oldVersionNumber[0] + 1)
+newVer = oldVersionNumber + 1
 
 f = open("meta.yaml")
 
@@ -26,5 +25,8 @@ oldMeta = f.read()
 
 splitUp = oldMeta.split(".")
 
-newMeta = splitUp[0] + str(newVer)+"\""+splitUp[1].split("\"")[1]
+newMeta = splitUp[0] + "." + str(newVer)+"\""+splitUp[1].split("\"")[1]
 
+j = open('meta.yaml', 'w')
+j.write(newMeta)
+j.close
