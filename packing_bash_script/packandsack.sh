@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Change meta.yaml
-python AutoUp.py
+python AutomatedExpUpload.py
 
 #Commence Building Operation
 conda build ExpName
