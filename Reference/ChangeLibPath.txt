@@ -1,8 +1,0 @@
-(ana-1.2.11) *tr* [hblair@pslogin7c myrel]$ printenv LD_LIBRARY_PATH
-/reg/g/psdm/sw/conda/inst/miniconda2-prod-rhel7/envs/ana-1.2.11/lib:/reg/neh/home5/hblair/CondaInC/updatedAndy/myrel/arch/x86_64-rhel7-gcc48-opt/lib:
-(ana-1.2.11) *tr* [hblair@pslogin7c myrel]$ which conda_setup
-/reg/g/psdm/sw/conda/manage/bin/conda_setup
-(ana-1.2.11) *tr* [hblair@pslogin7c myrel]$ export LD_LIBRARY_PATH=/reg/neh/home5/hblair/CondaInC/updatedAndy/myrel/arch/x86_64-rhel7-gcc48-opt/lib:${LD_LIBRARY_PATH}
-(ana-1.2.11) *tr* [hblair@pslogin7c myrel]$ printenv SIT_DATA
-/reg/neh/home5/hblair/CondaInC/updatedAndy/myrel/data:/reg/g/psdm/sw/conda/inst/miniconda2-prod-rhel7/envs/ana-1.2.11/data:/reg/g/psdm/data
-(ana-1.2.11) *tr* [hblair@pslogin7c myrel]$ unset SIT_DATA^C

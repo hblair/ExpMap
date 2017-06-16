@@ -1,3 +1,0 @@
-export SIT_DATA=/reg/g/psdm/data
-unset SIT_DATA
-run python new.py

@@ -28,3 +28,4 @@ splitUp = oldMeta.split(".")
 
 newMeta = splitUp[0] + str(newVer)+"\""+splitUp[1].split("\"")[1]
 
+print(newMeta)
