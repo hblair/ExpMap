@@ -17,26 +17,14 @@ v = search.split(".")
 lastLine = v[len(v)-1]
 
 oldVersionNumber = int(lastLine.split()) 
-print oldVersionNumber
 
-newVer = oldVersionNumber[0] + 1
-print newVer
-'''
-jim = len(v)
+newVer = int(oldVersionNumber[0] + 1)
 
-# Update with new version number
-m = jim + 1
-print '***New build number is 0.%s***' % m
+f = open("meta.yaml")
 
-# Set new commands
-pack = 'conda package -p C:\Users\Ian\Anaconda\gladio --pkg-name gladio --pkg-ver 0.%s --pkg-build 0' % m
-load = 'anaconda upload gladio-0.%s-0.tar.bz2' % m
+oldMeta = f.read()
 
-# Execute "pack" to create the package
-myout = subprocess.check_output(pack.split())
-print "***Creating package " + myout
+splitUp = oldMeta.split(".")
 
-#Execute "load" to upoad it to Anaconda
-upout = subprocess.check_output(load.split())
-print "***Uploading package " + upout
-'''
+newMeta = splitUp[0] + str(newVer)+"\""+splitUp[1].split("\"")[1]
+
