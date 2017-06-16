@@ -1,12 +1,13 @@
 package: 
   name: toconda
-  version: "0.3"
+  version: "0.4"
 
 source: 
-  path: /home/hblair/Science/AndyUpload/toconda
+  git_url: https://github.com/hblair/ExpMap 
+  git_tag: "v.0.2" 
 
 build: 
-  number: 4
+  number: 5
 
 requirements:
   build:
