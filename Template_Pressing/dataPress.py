@@ -21,7 +21,7 @@ f = open("ExperimentData.txt", "r")
 dataLines = f.readlines()
 newlineRemoved = []
 for line in dataLines:
-    newlineRemoved.append(line[:-1])
+    newlineRemoved.append(line)
     art = line.rstrip(' ') + '    '
     a = a.replace(line,art)
 f.close()
