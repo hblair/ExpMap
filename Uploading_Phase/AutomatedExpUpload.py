@@ -23,7 +23,7 @@ f = open("meta.yaml")
 
 oldMeta = f.read()
 
-splitUp = oldMeta.split(".")
+splitUp = oldMeta.split(".",1)
 
 newMeta = splitUp[0] + "." + str(newVer)+"\""+splitUp[1].split("\"",1)[1]
 
