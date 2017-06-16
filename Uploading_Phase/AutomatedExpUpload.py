@@ -10,7 +10,13 @@ import os, sys, subprocess, conda
 search = subprocess.check_output(['conda', 'search', 'gladio'])
 
 # Take version number from package
-v = [int(s) for s in search.split() if s.isdigit()]
+#v = [int(s) for s in search.split() if s.isdigit()]
+
+v = search.split(".")
+
+lastLine = v[len(v)-1]
+
+oldVersionNumber = lastLine.split() 
 
 jim = len(v)
 
